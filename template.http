@@ -1,0 +1,35 @@
+GET http://127.0.0.1:8080/xhr/v1/template
+
+
+
+###
+POST http://127.0.0.1:8080/xhr/v1/template
+Content-Type: application/json
+
+{
+  "name":"test2",
+  "template":"<h1>Welcome to ${name}</h1>",
+  "data": "{name: express}"
+}
+
+
+
+###
+GET http://127.0.0.1:8080/xhr/v1/template/5f69df8a3430e621537b725d
+
+
+
+###
+PUT http://127.0.0.1:8080/xhr/v1/template/5f69df8a3430e621537b725d
+Content-Type: application/json
+
+{
+  "name":"test",
+  "template":"<h1>Welcome to ${name}</h1>",
+  "data": "{name: express111}"
+}
+
+
+
+###
+DELETE  http://127.0.0.1:8080/xhr/v1/template/5f69df8a3430e621537b725d
